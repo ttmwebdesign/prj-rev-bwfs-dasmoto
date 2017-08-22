@@ -1,0 +1,44 @@
+body {
+  margin: 0 10px;
+  font-family: Helvetica;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: bold;
+  color: khaki;
+  text-align: center;
+}
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  padding-left: 5px;
+}
+h3.brush {
+  background-color: mediumspringgreen;
+}
+h3.frames {
+  background-color: lightcoral;
+}
+h3.paint {
+  background-color: skyblue;
+}
+/* 
+The spec doc does not make any mention of needing to be responsive, but without the settings in #heading as below, the image would end up being restricted to the 115px height even when the screen width was smaller and the text word-wrapped to the next line, putting it outside the background. While I've made no other adjustments for size of text, etc. on smaller screens, I thought the header should at least be semi-responsive.
+*/
+
+#header {
+  background-image: url('../images/pattern.jpg');
+  min-height: 115px;
+  max-height: 345px;
+  width: 100%;
+  max-width: 1190px;
+  margin: 0 auto;
+}
+.price {
+  font-weight: bold;
+  color: blue;
+}
+
+
